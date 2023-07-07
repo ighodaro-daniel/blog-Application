@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>detail</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="{% static 'blog/style.css'%}">
+    </head>
+    <body>
+        
+<div class="container">
+    <div class="page">
+<h1>{{question.question}}</h1>
+<p>{{question.pub_date}}</p>
+<p>{{question.article}}</p>
+<ul>
+{%for choice in question.choice_set.all %}
+ <li>{{choice.text}}</li>
+ <li>{{choice.votes}}</li>
+ {%endfor%}
+ </ul>
+ </div>
+ <a href="{% url 'blog:home' %}"><button>back</button></a>
+</div>
+    </body>
+</html>

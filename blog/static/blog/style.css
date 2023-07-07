@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+}
+
+
+h1{
+    color: white
+    
+}
+
+.container{
+    max-width: 800px;
+    background-color: darksalmon;
+    margin: 0 auto;
+}
+
+.page{
+    margin:0 200px;
+    width:400px;
+}
+ 
+.page li{
+list-style-type: none;
+padding-bottom: 30px;
+text-transform: uppercase;
+}
+.page a{
+    text-decoration: none;
+}
+.list li:hover{
+    background-color: green;
+}
+
+.page button{
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
